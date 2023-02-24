@@ -1,0 +1,41 @@
+{
+  "name": "tellus",
+  "version": "1.0.0",
+  "description": "Post new things",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon --inspect -r dotenv/config src/server.js",
+    "lint": "npx eslint ./src || exit 0",
+    "lint:fix": "npx eslint ./src --fix || exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shirin20/TellUs.git"
+  },
+  "author": "Shirin Mirkhan",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-mongodb-session": "^3.1.1",
+    "cookie-parser": "^1.4.6",
+    "csurf": "^1.11.0",
+    "date-fns": "^2.27.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "helmet": "^4.6.0",
+    "http-errors": "^2.0.0",
+    "mongoose": "^6.1.2",
+    "morgan": "^1.10.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Shirin20/TellUs/issues"
+  },
+  "homepage": "https://github.com/Shirin20/TellUs#readme",
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20"
+  }
+}
