@@ -7,7 +7,7 @@
 
 import express from 'express'
 import createError from 'http-errors'
-import { router as tellUs } from './tell-us.js'
+import { router as tellUs } from './tell-us-router.js'
 
 export const router = express.Router()
 
