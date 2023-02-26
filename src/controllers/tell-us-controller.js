@@ -25,4 +25,24 @@ export class TellUsController {
       next(error)
     }
   }
+
+  async newNote (req, res, next) {
+    try {
+      
+      // res.send('tell us')
+      res.render('tell-us/new-note')
+    } catch (error) {
+      next(error)
+    }
+  }
+
+  async aboutMe (req, res, next) {
+    try {
+      
+      // res.send('tell us')
+      res.render('tell-us/about-me')
+    } catch (error) {
+      next(error)
+    }
+  }
 }
